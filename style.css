@@ -1,0 +1,279 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#wrapper{
+    display: grid;
+    grid-template-areas: 
+    "header"
+    "bienvenidos"
+    "principal"
+    "muestras"
+    "divisor"
+    "formredes"
+    "footer";
+    grid-template-rows: 30px 30px 50px 50px 30px 10px 15px 20px;
+    grid-template-columns: auto 20px;
+    grid-row-gap: 10px;
+    grid-column-gap: 10px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+@media screen and (min-width: 992px) {
+    #wrapper{
+        display: grid;
+        grid-template-areas: 
+        "header header"
+        "bienvenidos bienvenidos"
+        "principal marcas"
+        "muestras muestras"
+        "divisor divisor"
+        "formredes formredes"
+        "footer footer";
+        ;
+        grid-template-columns: auto 200px;
+    }
+}
+header{
+    grid-area: header;
+}
+section#bienvenidos{
+    grid-area: bienvenidos;
+}
+section#principal{
+    grid-area: principal;
+}
+section#marcas{
+    grid-area: marcas;
+}
+section#muestras{
+    grid-area: muestras;
+}
+picture#divisor{
+    grid-area: divisor;
+}
+section#formredes{
+    grid-area: formredes;
+}
+footer{
+    grid-area: footer;
+}
+.navcontainer{
+    display: flex;
+    flex-direction: row;
+    background-image: url(./img/headerimagen.png);
+    justify-content: space-evenly;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    flex-wrap: wrap;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+.logo{
+    width: 200px;
+    height: auto;
+    margin-left: 60px;
+    flex-wrap: wrap;
+}
+.menu{
+    display: flex;
+    justify-content: space-between;
+    margin: 8px;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.menuitems{
+    font-size: 20px;
+    margin-left: 6rem;
+    margin-right: 6rem;
+    list-style: none;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-family: 'Oswald', sans-serif;
+    flex-wrap: wrap;
+}
+.welcome{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-content: space-around;
+    align-items: center;
+    margin-top: 140px;
+    margin-bottom: 10px;
+    background-color: darkgray;
+}
+.h2{
+    display: flex;
+    border-style: groove;
+    border-color: darkgreen;
+    color: darkgreen;
+    text-align: center;
+    width: 30rem;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    flex-wrap: wrap;
+}
+.imgprincipal{
+    display: flex;
+    background-image: url(./img/imagenfotosvarias.png);
+    border-style: groove;
+    border-color: darkgreen;
+    color: black;
+    font-size: 20px;
+    width: 70rem;
+    height: 30rem;
+    margin-top: 12rem;
+    margin-bottom: 2rem;
+    justify-content: start;
+    text-align: center;
+    padding-top: 15rem;
+    padding-left: 15rem;
+    padding-right: 10rem;
+    margin-left: 4rem;
+    flex-wrap: wrap;
+}
+.marcas{
+    visibility: hidden;  
+}
+.imgmarcas{
+    visibility: hidden;
+}
+.imgmuestras{
+    display: flex;
+    border-color: darkgreen;
+    border-style: groove;
+    width: 1900px;
+    height: 150px;
+    margin-left: 40px;
+    justify-content: space-evenly;
+    margin-top: 950px;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+}
+.divisor{
+    display: flex;
+    justify-content: center;
+    width: 100px;
+    height: 50px;
+    margin-top: 1100px;
+    margin-left: 1000px;
+    flex-wrap: wrap;
+}
+.formulario{
+    display: flex;
+    background-color: rgb(194, 191, 191);
+    border-color: darkgreen;
+    border-style: groove;
+    font-family: 'Oswald', sans-serif;
+    width: 1500px;
+    height: 80px;
+    margin-top: 1200px;
+    margin-left: 250px;
+    justify-content: center;
+    padding-top: 40px;
+    align-items: center;
+    list-style: none;
+    font-size: 20px;
+    flex-wrap: wrap;
+}
+.formuredes{
+    display: flex;
+    background-color: rgb(194, 191, 191);
+    border-color: darkgreen;
+    border-style: groove;
+    font-family: 'Oswald', sans-serif;
+    width: 1500px;
+    height: 80px;
+    margin-top: 100px;
+    margin-left: 20px;
+    justify-content: space-evenly;
+    align-items: center;
+    list-style: none;
+    font-size: 20px;
+    flex-wrap: wrap;
+}
+.footer{
+    display: flex;
+    flex-direction: row;
+    background-image: url(./img/headerimagen.png);
+    justify-content: space-evenly;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    flex-wrap: wrap;
+    margin-top: 1500px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    width: 2000px;
+    height: 100px;
+}
+.logofooter{
+   height: 100px;
+   width: auto;
+}
+.textfooter{
+    font-size: 20px;
+    font-family: 'Oswald', sans-serif;
+    font-weight: bold;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-top: 20px;
+}
+
+@media screen and (min-width: 992px) {
+    .marcas{
+        display: flex;
+        border-style: groove;
+        border-color: darkgreen;
+        width: 20rem;
+        height: 45rem;
+        margin-top: 195px;
+        margin-left: -150px;
+        font-size: 20px;
+        padding-top: 5px;
+        align-content: center;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        visibility: visible;
+    }
+    .imgmarcas{
+        flex-wrap: wrap;
+        flex-direction: column;
+        width: auto;
+        height: auto;
+        visibility: visible;
+    }
+}
+.fieldset{
+    display: flex;
+    border-color: darkgreen;
+    border-style: groove;
+    justify-content: space-around;
+    align-content: center;
+    padding: 5px 8px 5px 8px;
+    margin: 8px;
+    flex-wrap: wrap;
+}
+.fieldsetint{
+    display: flex;
+    border-color: darkgreen;
+    border-style: groove;
+    justify-content: space-around;
+    align-content: center;
+    padding: 5px 8px 5px 8px;
+    margin: 8px;
+    flex-wrap: wrap;
+}
+.fieldsetconsult{
+    display: flex;
+    border-color: darkgreen;
+    border-style: groove;
+    background-color: rgb(184, 182, 182);
+    flex-direction: column;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 20px;
+    flex-wrap: wrap;
+}
