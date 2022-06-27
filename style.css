@@ -108,8 +108,10 @@ footer{
     display: flex;
     border-style: groove;
     border-color: darkgreen;
-    color: darkgreen;
+    background-image: linear-gradient(to bottom, darkgreen, rgb(168, 197, 168)) ; 
+    color: white;
     text-align: center;
+    justify-content: center;
     width: 30rem;
     padding-top: 20px;
     padding-bottom: 10px;
@@ -126,13 +128,20 @@ footer{
     height: 30rem;
     margin-top: 12rem;
     margin-bottom: 2rem;
-    justify-content: start;
+   
     text-align: center;
     padding-top: 15rem;
     padding-left: 15rem;
     padding-right: 10rem;
     margin-left: 4rem;
     flex-wrap: wrap;
+}
+.h1{
+    transition: all 2s;
+}
+h1:hover{
+font-size: 40px;
+margin-top: -65px;
 }
 .marcas{
     visibility: hidden;  
@@ -165,6 +174,8 @@ footer{
     display: flex;
     background-color: rgb(194, 191, 191);
     border-color: darkgreen;
+    background-image: linear-gradient(to bottom, darkgreen, rgb(168, 197, 168)) ; 
+    color: white;
     border-style: groove;
     font-family: 'Oswald', sans-serif;
     width: 1500px;
@@ -184,6 +195,8 @@ footer{
     border-color: darkgreen;
     border-style: groove;
     font-family: 'Oswald', sans-serif;
+    background-image: linear-gradient(to bottom, darkgreen, rgb(168, 197, 168)) ; 
+    color: white;
     width: 1500px;
     height: 80px;
     margin-top: 100px;
@@ -231,7 +244,9 @@ footer{
         margin-top: 195px;
         margin-left: -150px;
         font-size: 20px;
-        padding-top: 5px;
+        font-weight: bold;
+        justify-items: center;
+        padding: 5px;
         align-content: center;
         justify-content: space-evenly;
         flex-wrap: wrap;
