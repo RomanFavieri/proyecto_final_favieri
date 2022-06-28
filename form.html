@@ -4,50 +4,42 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Creaciones Unagi</title>
+    <title>Formulario</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;700&display=swap" rel="stylesheet">
 </head>
-<body>
-    <div id="wrapperform">
-        <header>
+    <body>
+        <header id="nav">
             <nav class="navcontainer">
                 <img src="./IMG/logo.png" alt="logo Creaciones Unagi" class="logo">      
             <ul class="menu">
                 <li class="menuitems">
-                    <a href="./remeras.html">Remeras</a>
+                    <a href="./remeras.html">REMERAS</a>
                 </li>
                 <li class="menuitems">
-                    <a href="gorras.html">Gorras</a>
+                    <a href="gorras.html">GORRAS</a>
                 </li>
                 <li class="menuitems">
-                    <a href="tazas.html">Tazas</a>
+                    <a href="tazas.html">TAZAS</a>
                 </li>
             </ul>
-            </nav>     
+            </nav>
         </header>
-
-              
-        <section id="hacenos">
-        <h1>HACENOS TU CONSULTA</h1>
-        </section>
-        <section id="name">
+        <div id="wrapperform">      
+        <section id="info">
             <form action="Gracias" method="get" enctype="multipart/form-data">
                 <fieldset class="fieldset">
-                    <div class="namesform">
                         <label for="Nombre">Nombre</label>
                         <input type="text" name="Nombre" id="Nombre" placeholder="Nombre">
                         <label for="Apellido">Apellido</label>
                         <input type="text" name="apellido" id="Apellido" placeholder="Apellido">
                         <label for="Mail">Mail</label>
                         <input type="text" name="Mail" id="Mail" placeholder="Mail">
-                    </div>
                 </fieldset>
             </form>
         </section>
-        
         <section id="intereses">
             <form action="Gracias" method="get" enctype="multipart/form-data"  class="fieldsetint">
             <label for="Como nos conociste?">Como nos conociste?</label>
@@ -71,7 +63,7 @@
                 <input type="checkbox" name="Otros" id="Otros" value="Otros">
         </form>
         </section>
-        <section id="consult">
+        <section id="consulta">
             <form action="Gracias" class="fieldsetconsult">
             <legend>Consulta</legend>
             <textarea name="consulta" cols="50" rows="10"></textarea>       
@@ -80,14 +72,12 @@
          <input type="reset" name="Limpiar Consulta">
         </form>
         </section>
-
-
-
-<footer class="footer">
-    <img src="./img/logochico.png" alt="logo empresa" class="logofooter">
-    <section class="textfooter">
-        <p>creacionesunagi@gmail.com</p>
-        <p>Mataderos - CABA</p>
-</footer>
-</body>
+    </div>
+        <footer id="footer" class="footer" >
+            <img src="./img/logochico.png" alt="logo empresa" class="logofooter">
+            <section class="textfooter">
+                <p>creacionesunagi@gmail.com</p>
+                <p>Mataderos - CABA</p>
+        </footer>
+    </body>
 </html>
