@@ -2,38 +2,25 @@
     margin: 0;
     padding: 0;
 }
+html body{
+    width: 100%;
+    height: 100vh;
+}
 
 #wrapper{
     display: grid;
     grid-template-areas: 
-    "header"
-    "bienvenidos"
-    "principal"
-    "muestras"
-    "divisor"
-    "formredes"
-    "footer";
-    grid-template-rows: 30px 30px 50px 50px 30px 10px 15px 20px;
-    grid-template-columns: auto 20px;
-    grid-row-gap: 10px;
+    "header header"
+    "bienvenidos bienvenidos"
+    "principal marcas"
+    "muestras muestras"
+    "divisor divisor"
+    "formredes formredes"
+    "footer footer";
+    grid-template-rows: 100px 150px 650px 200px 50px 80px 100px 40px;
+    grid-template-columns: auto 300px;
+    grid-row-gap: auto;
     grid-column-gap: 10px;
-    margin-top: 5px;
-    margin-bottom: 10px;
-}
-@media screen and (min-width: 992px) {
-    #wrapper{
-        display: grid;
-        grid-template-areas: 
-        "header header"
-        "bienvenidos bienvenidos"
-        "principal marcas"
-        "muestras muestras"
-        "divisor divisor"
-        "formredes formredes"
-        "footer footer";
-        ;
-        grid-template-columns: auto 200px;
-    }
 }
 header{
     grid-area: header;
@@ -44,31 +31,34 @@ section#bienvenidos{
 section#principal{
     grid-area: principal;
 }
-section#marcas{
+aside#marcas{
     grid-area: marcas;
+    border-style: groove;
+    border-color: rgb(68, 238, 238);
+    margin-top: 15px;
 }
 section#muestras{
     grid-area: muestras;
+    margin-top: 10px;
 }
 picture#divisor{
     grid-area: divisor;
+    margin-top: 15px;
 }
 section#formredes{
     grid-area: formredes;
+    margin-top: 60px;
 }
 footer{
     grid-area: footer;
+    margin-top: 100px;
 }
 .navcontainer{
     display: flex;
     flex-direction: row;
     background-image: url(./img/headerimagen.png);
     justify-content: space-evenly;
-    padding-top: 5px;
-    padding-bottom: 5px;
     flex-wrap: wrap;
-    margin-top: 5px;
-    margin-bottom: 10px;
 }
 .logo{
     width: 200px;
@@ -100,9 +90,8 @@ footer{
     flex-wrap: wrap;
     align-content: space-around;
     align-items: center;
-    margin-top: 140px;
+    margin-top: 15px;
     margin-bottom: 10px;
-    background-color: darkgray;
 }
 .h2{
     display: flex;
@@ -113,7 +102,7 @@ footer{
     text-align: center;
     justify-content: center;
     width: 30rem;
-    padding-top: 20px;
+    padding-top: 10px;
     padding-bottom: 10px;
     flex-wrap: wrap;
 }
@@ -124,16 +113,7 @@ footer{
     border-color: darkgreen;
     color: black;
     font-size: 20px;
-    width: 70rem;
-    height: 30rem;
-    margin-top: 12rem;
-    margin-bottom: 2rem;
-   
     text-align: center;
-    padding-top: 15rem;
-    padding-left: 15rem;
-    padding-right: 10rem;
-    margin-left: 4rem;
     flex-wrap: wrap;
 }
 .h1{
@@ -141,33 +121,35 @@ footer{
 }
 h1:hover{
 font-size: 40px;
-margin-top: -65px;
 }
 .marcas{
-    visibility: hidden;  
+    display: flex;
+    border-style: groove;
+    border-color: darkgreen;
+    font-size: 20px;
+    font-weight: bold;
+    justify-items: center;
+    align-content: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    visibility: visible;
 }
 .imgmarcas{
-    visibility: hidden;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-between;
+    visibility: visible;
 }
 .imgmuestras{
     display: flex;
     border-color: darkgreen;
     border-style: groove;
-    width: 1900px;
-    height: 150px;
-    margin-left: 40px;
     justify-content: space-evenly;
-    margin-top: 950px;
-    margin-bottom: 20px;
     flex-wrap: wrap;
 }
 .divisor{
     display: flex;
-    justify-content: center;
-    width: 100px;
-    height: 50px;
-    margin-top: 1100px;
-    margin-left: 1000px;
+    flex-direction: column;
     flex-wrap: wrap;
 }
 .formulario{
@@ -178,12 +160,7 @@ margin-top: -65px;
     color: white;
     border-style: groove;
     font-family: 'Oswald', sans-serif;
-    width: 1500px;
-    height: 80px;
-    margin-top: 1200px;
-    margin-left: 250px;
-    justify-content: center;
-    padding-top: 40px;
+    justify-content: space-around;
     align-items: center;
     list-style: none;
     font-size: 20px;
@@ -191,18 +168,11 @@ margin-top: -65px;
 }
 .formuredes{
     display: flex;
-    background-color: rgb(194, 191, 191);
-    border-color: darkgreen;
-    border-style: groove;
     font-family: 'Oswald', sans-serif;
     background-image: linear-gradient(to bottom, darkgreen, rgb(168, 197, 168)) ; 
     color: white;
-    width: 1500px;
-    height: 80px;
-    margin-top: 100px;
-    margin-left: 20px;
-    justify-content: space-evenly;
-    align-items: center;
+    justify-content: space-around;
+    align-items: flex-end;
     list-style: none;
     font-size: 20px;
     flex-wrap: wrap;
@@ -212,14 +182,8 @@ margin-top: -65px;
     flex-direction: row;
     background-image: url(./img/headerimagen.png);
     justify-content: space-evenly;
-    padding-top: 5px;
-    padding-bottom: 5px;
+    align-items: center;
     flex-wrap: wrap;
-    margin-top: 1500px;
-    margin-bottom: 10px;
-    margin-left: 10px;
-    width: 2000px;
-    height: 100px;
 }
 .logofooter{
    height: 100px;
@@ -231,64 +195,4 @@ margin-top: -65px;
     font-weight: bold;
     justify-content: space-evenly;
     align-items: center;
-    padding-top: 20px;
-}
-
-@media screen and (min-width: 992px) {
-    .marcas{
-        display: flex;
-        border-style: groove;
-        border-color: darkgreen;
-        width: 20rem;
-        height: 45rem;
-        margin-top: 195px;
-        margin-left: -150px;
-        font-size: 20px;
-        font-weight: bold;
-        justify-items: center;
-        padding: 5px;
-        align-content: center;
-        justify-content: space-evenly;
-        flex-wrap: wrap;
-        visibility: visible;
-    }
-    .imgmarcas{
-        flex-wrap: wrap;
-        flex-direction: column;
-        width: auto;
-        height: auto;
-        visibility: visible;
-    }
-}
-.fieldset{
-    display: flex;
-    border-color: darkgreen;
-    border-style: groove;
-    justify-content: space-around;
-    align-content: center;
-    padding: 5px 8px 5px 8px;
-    margin: 8px;
-    flex-wrap: wrap;
-}
-.fieldsetint{
-    display: flex;
-    border-color: darkgreen;
-    border-style: groove;
-    justify-content: space-around;
-    align-content: center;
-    padding: 5px 8px 5px 8px;
-    margin: 8px;
-    flex-wrap: wrap;
-}
-.fieldsetconsult{
-    display: flex;
-    border-color: darkgreen;
-    border-style: groove;
-    background-color: rgb(184, 182, 182);
-    flex-direction: column;
-    padding: 10px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    font-size: 20px;
-    flex-wrap: wrap;
 }
