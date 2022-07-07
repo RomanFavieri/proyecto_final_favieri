@@ -139,6 +139,9 @@ font-size: 40px;
     visibility: hidden;
     visibility: none;
 }
+.pmarcas{
+    visibility: none;
+}
 .imgmuestras{
     display: flex;
     border-color: darkgreen;
@@ -188,15 +191,6 @@ font-size: 40px;
 }
 .fa-brands{
 color: black;
-}
-.fa-instagram-square{
-
-}
-.fa-facebook{
-
-}
-.fa-whatsapp-square{
-
 }
 .footer{
     display: flex;
